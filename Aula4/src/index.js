@@ -1,27 +1,23 @@
-function calculaA(b, c, d){
-    return (b*c)/d;
-}
-function calculaB(a, c, d){
-    return (a*d)/c;
-}
-function calculaC(b, a, d){
-    return (a*d)/b;
-}
-function calculaD(b, c, a){
-    return (b*c)/a;
-}
-function calculaRegra(a, b, c, d){
-    if(a==0){
-        return calculaA(b,c,d);
-    } else if(b==0){
-        return calculaB(a,c,d);
-    } else if(c==0){
-        return calculaC(b,a,d);
-    } else{
-        return calculaD(b,c,a);
+function executaTraducao(){
+    let texto = document.getElementById("ing").value;
+    switch(texto){
+        case "good morning";
+        return "Bom Dia";
+        break;
+        case "good afternoon";
+        return "Boa Tarde";
+        break;
+        case "good night";
+        return "Boa Noite";
+        break;
+        default:
+            return "Fora da tradução";
+
+
     }
 }
-console.log(calculaRegra(100,320,40,0));
-
+function fazTraducao(){
+    document.getElementById("port").innerHTML=executaTraducao();
+}
 
 
