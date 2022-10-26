@@ -1,13 +1,13 @@
 function executaTraducao(){
     let texto = document.getElementById("ing").value;
     switch(texto){
-        case "good morning";
+        case "good morning":
         return "Bom Dia";
         break;
-        case "good afternoon";
+        case "good afternoon":
         return "Boa Tarde";
         break;
-        case "good night";
+        case "good night":
         return "Boa Noite";
         break;
         default:
